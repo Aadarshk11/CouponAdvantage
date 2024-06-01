@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- layout_static_buttons.xml -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="13dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="62dp"
+            android:layout_height="65dp"
+            android:backgroundTint="#E7BB7B"
+            android:contentDescription="home"
+            android:onClick="home"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="62dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:backgroundTint="#E7BB7B"
+            android:contentDescription="chat"
+            android:onClick="chat"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_chat" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="62dp"
+            android:layout_height="65dp"
+            android:backgroundTint="@color/black"
+            android:contentDescription="sell"
+            android:onClick="sell"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_add_ads" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="62dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:backgroundTint="#E7BB7B"
+            android:contentDescription="ad"
+            android:onClick="ads"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_my_ads" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="62dp"
+            android:layout_height="65dp"
+            android:backgroundTint="#E7BB7B"
+            android:contentDescription="profile"
+            android:onClick="profile"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_profile" />
+
+    </LinearLayout>
+</RelativeLayout>

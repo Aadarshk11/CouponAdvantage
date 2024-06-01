@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CouponMania"
+        tools:targetApi="31">
+        <activity
+            android:name=".Profile_info"
+            android:exported="false"
+            android:label="user_info"
+            android:parentActivityName=".PROFILE" />
+
+        <activity
+            android:name=".PROFILE"
+            android:exported="false"
+            android:label="profile"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MyAds"
+            android:exported="false"
+            android:label="upload"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SELL"
+            android:exported="false"
+            android:label="selling"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CHAT"
+            android:exported="false"
+            android:label="chatting"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest>
